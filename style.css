@@ -137,7 +137,7 @@ body {
     display: flex;
     flex-direction: row;
     border: 4px solid red;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,13 +156,13 @@ body {
 .conf-right-left {
     display: flex;
     flex-direction: row;
-    border: 4px solid rgb(255, 0, 170);
+    
 }
 
 .conf-name {
     display: flex;
     flex-direction: column;
-    border: 4px solid rgb(0, 217, 255);
+    
 }
 
 .conf-name-title {
@@ -178,7 +178,7 @@ body {
 .conf-name-stars {
     height: 22px;
     width: 70px;
-    border: 4px solid rgb(255, 0, 0);
+    
 }
 
 .conf-name-opinion {
@@ -193,7 +193,8 @@ body {
 .conf-info {
     display: flex;
     flex-direction: column;
-    border: 4px solid rgb(0, 81, 255);
+    padding-right: 30px;
+    
 }
 .conf-info-spec {
     font-size: 13px;
@@ -201,10 +202,10 @@ body {
 }
 
 .conf-info-spec-up {
-    border-top: 2px solid #f2f2f2;
+    border-top: 2px solid rgb(221, 221, 221);
 }
 .conf-info-spec-bottom{
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid rgb(221, 221, 221);
 }
 
 .conf-info-ram {
@@ -219,22 +220,140 @@ body {
 
 .conf-info-ram-button {
     background-color: white;
-    border: 2px solid #f2f2f2;
+    border: 2px solid rgb(221, 221, 221);
     border-radius: 8px;
     font-size: 14px;
     margin: 4px;
     padding: 4px 0px;
     width: 98%;
 }
-
 .ram-price {
     font-size: 12px;
 }
 
+.conf-info-windows {
+    padding: 8px 0px;
+}
+
+.conf-info-windows-button{
+    background-color: white;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 4px 0px;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+    width: 98%;
+}
+
+.conf-info-insurance {
+    border-top: 2px solid rgb(221, 221, 221);
+    padding: 8px 0px;
+    margin: 4px 0px;
+}
+
+.conf-info-insurance-button{
+    background-color: white;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 4px 0px;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+    width: 98%;
+}
+
+.conf-info-insurance-button-price {
+    font-size: 12px;
+}
+
 .conf-price {
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 4px solid rgb(174, 0, 255);
+    height: auto;
+    width: 50%;
+    
+}
+
+.conf-price-sum {
+    font-size: 26px;
+    padding: 16px 16px 16px 0px;
+    text-align: right;
+}
+
+.conf-price-basket {
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    
+    
+}
+.conf-price-number {
+    background-color: white;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 16px;
+    height: 38px;
+    font-size: 14px;
+    margin: 4px 0px 4px 10px;
+    padding: 8px 0px;
+    text-align: center;
+    width: 46px;
+}
+
+.conf-price-add {
+    align-items: center;
+    background-color: rgb(17, 158, 0);
+    border: none;
+    border-radius: 24px;
+    display: flex;
+    font-size: 14px;
+    height: 38px;
+    justify-content: center;
+    margin: 4px 0px 4px 10px;
+    padding: 8px 0px;
+    width: 180px;
+    
+    
+}
+
+.conf-price-add-picture {
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.conf-price-add-text {
+    color: white;
+    font-size: 14px; 
+    
+}
+
+.conf-options {
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0px;
+    text-align: left;
+    width: 100%;
+    
+
+}
+.conf-options-img{
+    
+    padding: 0px 10px;
+    height: 24px;
+    
+}
+
+.conf-options-text {
+    
 }
 
 
