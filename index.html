@@ -82,6 +82,17 @@
             <div class="product-conf">
                 <div class="conf-left">
 
+                    <div id="image-gallery">
+                        <img id="main-image" src="img/1.webp" alt="image1" />
+                        <div id="thumbnail-container">
+                          <img class="thumbnail" src="img/2.webp" alt="image1" />
+                          <img class="thumbnail" src="img/3.webp" alt="image2" />
+                          <img class="thumbnail" src="img/4.webp" alt="image3" />
+                          <img class="thumbnail" src="img/5.webp" alt="image4" />
+                          <img class="thumbnail" src="img/6.webp" alt="image5" />
+                        </div>
+                      </div>
+
                 </div>
 
                 <div class="conf-right">
@@ -104,19 +115,19 @@
                             </span>
                             <span class="conf-info-ram">Pamięć RAM</span>
                             <div class="ram-button">
-                                <button class="conf-info-ram-button">16BG <br><span class="ram-price">-400 zł</span></button>
-                                <button class="conf-info-ram-button">32BG <br><span class="ram-price">+400 zł</span></button>
+                                <button class="conf-info-ram-button" data-price-change="-400" data-ram="16GB">16BG <br><span class="ram-price-delete">-400 zł</span></button>
+                                <button class="conf-info-ram-button" data-price-change="400" data-ram="32GB">32BG <br><span class="ram-price-add">+400 zł</span></button>
                             </div>
                             <span class="conf-info-windows">System operacyjny</span>
-                            <button class="conf-info-windows-button">Microsoft Windows 11 Home</button>
-                            <button class="conf-info-windows-button">Brak systemu</button>
+                            <button class="conf-info-windows-button" win-price-change="500" data-win="Microsoft Windows 11 Home">Microsoft Windows 11 Home <span class="windows-price-add">+500 zł</span></button>
+                            <button class="conf-info-windows-button" win-price-change="-500" data-win="Brak systemu">Brak systemu <span class="windows-price-delate">-500 zł</span></button>
                             <span class="conf-info-insurance">Ubezpieczenie urządzenia</span>
-                            <button class="conf-info-insurance-button">Brak dodatkowej ochrony</button>
-                            <button class="conf-info-insurance-button">Wybierz eXtra ochronę <span class="conf-info-insurance-button-price">od 530 zł</span></button>
+                            <button class="conf-info-insurance-button" sec-price-change="-530" data-sec="Brak dodatkowej ochrony">Brak dodatkowej ochrony <span class="insurance-price-delete">-530 zł</span></button>
+                            <button class="conf-info-insurance-button" sec-price-change="530" data-sec="Wybierz eXtra ochronę">Wybierz eXtra ochronę <span class="insurance-price-add">530 zł</span></button>
                         </div>
                     
                         <div class="conf-price">
-                            <span class="conf-price-sum">5299,00 zł</span>
+                            <span class="conf-price-sum" id="conf-price">5299,00 zł</span>
                             <div class="conf-price-basket">
                                 <button class="conf-price-number">1</button>
                                 <button class="conf-price-add"> 
