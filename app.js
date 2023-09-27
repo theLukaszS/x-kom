@@ -1,11 +1,25 @@
-var thumbnails = document.querySelectorAll(".thumbnail")
-var mainImage = document.querySelector("#main-image")
+// Galeria 1
+const thumbnails1 = document.querySelectorAll("#thumbnail-container-1 .thumbnail");
+const mainImage1 = document.querySelector("#main-image-1");
 
-for (var i = 0; i < thumbnails.length; i++) {
-  thumbnails[i].addEventListener("click", function () {
-    mainImage.src = this.src
-  })
+for (let i = 0; i < thumbnails1.length; i++) {
+  thumbnails1[i].addEventListener("click", function () {
+    mainImage1.src = this.src;
+  });
 }
+
+// Galeria 2
+const thumbnails2 = document.querySelectorAll("#thumbnail-container-2 .thumbnail");
+const mainImage2 = document.querySelector("#main-image-2");
+
+for (let i = 0; i < thumbnails2.length; i++) {
+  thumbnails2[i].addEventListener("click", function () {
+    mainImage2.src = this.src;
+  });
+}
+
+
+
 
 
 
@@ -167,3 +181,5 @@ hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
+
+
