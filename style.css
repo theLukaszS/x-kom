@@ -32,6 +32,7 @@ body {
     max-height: 40px;
     max-width: auto;
     position: relative;
+    padding-left: 20px;
     width: auto;
 }
 
@@ -52,7 +53,8 @@ body {
     padding-right: 14px;
 }
 
-.search-bar {
+.search-bar,
+.search-bar-720 {
     align-items: center;
     border: 1px solid #777;
     border-radius: 25px;
@@ -60,10 +62,12 @@ body {
     justify-content: space-between;
     margin-left: 50px;
     width: 100%;
+    max-width: 770px;
     
 }
 
-.search-input {
+.search-input,
+.search-input-720 {
     display: flex;
     border: none;
     margin-left: 25px;
@@ -73,7 +77,8 @@ body {
 
 
 
-.search-button {
+.search-button,
+.search-button-720 {
     border: none;
     background-color: rgb(77, 77, 77);
     border-radius: 25px;
@@ -84,7 +89,8 @@ body {
     padding-top: 8px;
 }
 
-.search-button-img { 
+.search-button-img,
+.search-button-img-720 { 
     border: none;  
     height: 24px;
     
@@ -133,24 +139,57 @@ body {
     text-align: left;
 }
 
+.navbar {
+    display: flex;
+    left:1%;
+    padding: 14px;
+    position: absolute;
+    background-color: #c0c0c0;
+    color: white;
+    z-index: 10;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.nav-links li {
+    margin: 10px 0px;
+}
 .product-conf {
     display: flex;
     flex-direction: row;
-    border: 4px solid red;
     width: 80%;
+    max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 .conf-left {
-    border: 4px solid rgb(255, 187, 0);
     width: 45%;
 }
 
 .conf-right {
     display: flex;
     flex-direction: column;
-    border: 4px solid rgb(0, 255, 55);
     width: 55%;
 }
 .conf-right-left {
@@ -159,36 +198,43 @@ body {
     
 }
 
-.conf-name {
+.conf-name,
+.conf-name-1080 {
     display: flex;
     flex-direction: column;
     
+    
 }
 
-.conf-name-title {
+.conf-name-title,
+.conf-name-title-1080 {
     font-size: 26px;
     color: rgb(26, 26, 26);
 }
 
-.conf-name-rating {
+.conf-name-rating,
+.conf-name-rating-1080 {
     align-items: center;
     display: flex;
     flex-direction: row; 
     margin: 8px 0px;
 }
-.conf-name-stars {
+.conf-name-stars,
+.conf-name-stars-1080 {
     height: 14px;
     padding-right: 5px;
     width: 70px;
     
 }
 
-.conf-name-opinion {
+.conf-name-opinion,
+.conf-name-opinion-1080 {
     display: flex;
     flex-direction: row;
 }
 
-.conf-name-number{
+.conf-name-number,
+.conf-name-number-1080 {
     margin-bottom: 8px;
 }
 
@@ -197,10 +243,11 @@ body {
     flex-direction: column;
     padding-right: 30px;
     
+    
 }
 .conf-info-spec {
     font-size: 13px;
-    padding: 0px 0px 8px 0px;
+    padding: 6px 0px 6px 0px;
 }
 
 .conf-info-spec-up {
@@ -298,13 +345,11 @@ body {
 }
 
 .conf-price {
-    border: 2px solid rgb(221, 221, 221);
-    border-radius: 10px;
+    border-top: 2px solid rgb(221, 221, 221);
     display: flex;
     flex-direction: column;
     height: auto;
     width: 50%;
-    
 }
 
 .conf-price-sum {
@@ -420,7 +465,7 @@ body {
     .search-bar {
         margin-left: 25px;
         margin-right: 25px;
-        min-width: 600px; 
+        max-width: 480px; 
         
 }
 }
@@ -444,21 +489,153 @@ body {
 }
 }
 
+@media (min-width: 1080px) {
+    .conf-name-1080{
+        display: none;
+    }
+
+}
+
 @media (max-width: 1080px){
     .section-bottom,
     .x-kom-logo-img,
-    .search-button {
+    .search-button,
+    .conf-name {
         display: none;    
 }
-.search-bar {
-    
-    min-width: auto; 
+    .search-bar {
+        width: 100%; 
+}
+    .conf-name-title-1080 {
+        font-size: 22px;
+    }
+    .conf-name-1080 {
+        padding: 20px 0px 20px 20px;
+    }
+    .conf-right-left {
+        display: flex;
+        flex-direction: column-reverse;
+        border: 3px solid rgb(0, 255, 76);
+    }
+    .conf-price{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conf-left {
+        width: 100%;
+    }
+    .product-conf {
+        width: 100%;
+    }
+    .conf-info-spec {
+        padding-top: 5px;
+    }
     
 }
+
+@media (min-width: 901px) {
+    .search-bar-720 {
+        display: none;
+    }
 }
+
+@media (max-width: 900px) {
+    #main-image{
+        display: flex;
+        height: 340px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .search-input {
+        display: none;
+    }
+    .search-bar {
+        border: none;
+        width: 100%;
+    }
+    .search-button-720 {
+        display: none;
+    }
+    .search-bar-720 {
+        height: 30px;
+        width: 90%;
+        min-width: none;
+    }
+    .search-input-720 {
+        width: auto;
+        margin: 15px;
+    }
+    
+}
+
+@media (min-width: 721px) {
+    .gallery-720 {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .conf-left,
+    .conf-name-number-1080 {
+        display: none;
+    }
+    .conf-right {
+        width: 100%;
+    }
+    .conf-price-sum {
+        text-align: left;
+    }
+    .conf-price-add {
+        width: 100%;
+    }
+    .conf-name-title-1080 {
+        font-size: 18px;
+    }
+    #main-image{
+        display: flex;
+        height: 240px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .section-up-btn {        
+        
+       
+        cursor: pointer;
+        font-size: 10px;
+       
+        height: 40px;
+        width: auto;
+        
+    }
+    .section-up-btn {
+        display: none;
+    }
+    .x-kom-logo-small-img {
+        margin-left: 50px;
+    }
+    
+}
+
+@media (min-width: 721px) {
+    .navbar {
+        display: none;
+    }
+}
+
+
 @media (min-width: 1080px){
     .x-kom-logo-small-img {
         display: none;    
 }
 
 }
+
+
+
+
+
+
+
+
