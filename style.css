@@ -212,7 +212,7 @@ body {
 
 .conf-name-stars,
 .conf-name-stars-1080 {
-    height: 14px;
+    height: 16px;
     padding-right: 5px;
     width: 70px;
     
@@ -631,6 +631,240 @@ body {
     margin: 20px 0px 20px 0px;
   }
 
+  .opinions-title {
+    border-top: 3px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+
+  .opinions {
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    max-width: 1180px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+  }
+
+  .opinions-left {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .left-title {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+
+  .opinions-right {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .opinions-star {
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .opinions-button {
+    background-color: rgb(0, 130, 250);
+    border:2px solid rgb(0, 130, 250);
+    border-radius: 20px;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  .newsletter-and-app {
+    display: flex;
+    flex-direction: row;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 95%;
+  }
+  .newsletter-left{
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    margin-right: 20px;
+    max-width: 1180px;
+    padding: 20px;
+    width: 60%;
+  }
+  
+  .newsletter-icons {
+    align-content: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .newsletter-text {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .newsletter-app {
+    border-radius: 20px;
+    width: 50%;
+  }
+  .newsletter-search-input {
+    border: 1px solid  #bdbdbd;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+  .newsletter-search-button {
+    background-color: rgb(0, 130, 250);
+    border: 2px solid rgb(0, 130, 250);
+    border-radius: 20px;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    margin-left: -25px;
+  }
+  .sales-masters {
+    align-items: center;
+    background-color: #f2f2f2;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 90%;
+  }
+  .sales-masters-icon {
+    border-radius: 20px;
+  }
+  .sales-masters-text {
+    font-size: 16px;
+  }
+  .sales-masters-button {
+    border: 2px solid rgb(190, 0, 100);
+    border-radius: 20px;
+    color: rgb(190, 0, 100);
+    font-size: 14px;
+    padding: 6px 18px 6px 18px;
+  }
+
+  .footer {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .footer-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 90%;
+    align-content: center;
+    
+  }
+  .footer-btn {
+    align-items: center;
+    background-color: white;
+    border: 2px solid white;
+    border-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+  }
+
+  .footer-icons {
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  .footer-time{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 30px;
+  }
+
+  .footer-title-stay {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 90%;
+    align-content: center;
+  }
+
+  .footer-contact {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+  }
+
+  .footer-social {
+    display: flex;
+  }
+
+  .footer-social-btn {
+    background-color: white;
+    border: white;
+  }
+
+  .footer-social-icon {
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    height: 26px;
+    margin: 10px;
+  }
+
+
 @media (max-width: 1600px) {
     .search-bar {
         margin-left: 25px;
@@ -661,6 +895,9 @@ body {
     .conf-name-1080{
         display: none;
     }
+    .newsletter-app-1080 {
+        display: none;
+      }
 }
 
 @media (max-width: 1080px) {
@@ -696,6 +933,27 @@ body {
     .conf-info-spec {
         padding-top: 5px;
     }
+    .newsletter-and-app {
+        display: flex;
+        flex-direction: column;
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+        width: 95%;
+      }
+      .newsletter-left {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      .newsletter-app {
+        display: none;
+      }
+      .newsletter-app-1080 {
+        border-radius: 20px;
+        width: 100%;
+      }
+
     
 }
 
@@ -802,6 +1060,67 @@ body {
     .specification-left {
         text-align: left;
     }
+    .opinions-star {
+        display: none;
+    }
+    .opinions-title {
+        width: 90%;
+    }
+    .opinions {
+        border: 3px solid #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 1180px;
+        min-width: 0px;
+        padding: 20px;
+        width: 100%;
+      }
+      .left-title {
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+      }
+
+      .left-text {
+        display: flex;
+        font-size: 13px;
+        justify-content: center;
+      }
+      .opinions-left,
+      .opinions-right {
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+      }
+      .newsletter-icons {
+        display: none;
+      }
+      .newsletter-left {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+      }
+      .sales-masters {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 87%;
+      }
+      .sales-masters-icon,
+      .sales-masters-text {
+        padding-bottom: 15px;
+      }
+      .footer-title {
+        display: none;
+      }
+
     
 }
 
