@@ -19,10 +19,6 @@ for (let i = 0; i < thumbnails2.length; i++) {
 }
 
 
-
-
-
-
 // Pobierz referencje do elementów HTML
 const ramButtons = document.querySelectorAll('.conf-info-ram-button');
 const windowsButtons = document.querySelectorAll('.conf-info-windows-button');
